@@ -1,10 +1,11 @@
 import "../../css/w3.css";
 
-function Buttons({text}) {
+function Buttons({text, onclick}) {
     return(
         <>
-            <button className="w3-btn w3-blue">
-                {text}
+            <button 
+                onClick={onclick}
+                className="w3-btn w3-large w3-block"> {text}
             </button>
         </>
     );
