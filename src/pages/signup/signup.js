@@ -1,9 +1,18 @@
+import { useHistory } from 'react-router-dom';
+
 import Inputs from "../../components/Inputs/inputs";
 import Buttons from "../../components/Buttons/buttons";
 import "../../css/w3.css";
 
 
 function Signup() {
+
+    const appHistory = useHistory();
+
+    function toLoginPage() {
+        appHistory.push("/login");
+    };
+
     return(
         <div className="w3-container">
             <div className="w3-container">
@@ -28,7 +37,7 @@ function Signup() {
                     </div>
 
                     <Buttons text="Sign Up" />
-                    <p>Have an account? Login <a href="#">here</a></p>
+                    <p>Have an account? Login <a href="#" onClick={toLoginPage}>here</a></p>
                 </form>
             </div>
         </div>
