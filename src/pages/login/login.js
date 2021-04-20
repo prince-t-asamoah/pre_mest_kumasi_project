@@ -28,12 +28,24 @@ function Login() {
 
     function submitButton(event) {
         event.preventDefault();
+        let loginObject = { username: userName, password: userPassword};
+        let jsonObject = JSON.stringify(loginObject);
+
+        fetch('http://localhost:5000/api/v1/login', {
+            method: 'POST',
+            body: jsonObject,
+            headers: { 'Content-Type': 'application/json' }
+        } )
+        .then(res => res.json())
+        .then(res => {console.log(res)});
     };
+
+   
 
     return(
         <div className="w3-container login-container">
             <div className="w3-container">
-                <h2 className="w3-center">Login</h2>
+                <h2 className="w3-center">Log in to Msys</h2>
             </div>
 
             <div className="w3-container">
@@ -48,9 +60,9 @@ function Login() {
                         <Inputs type="password" placeholder="Enter Your Password" onchange={updateUserPassword}/>
                     </div>
 
-                    <p><a href="#">Forgot password?</a></p>
+                    <p></p>
                     <Buttons text="Login" onclick={submitButton}/>
-                    <p>Don't have an account? Sign up <a href="#" onClick={toSignUp}>here</a></p>
+                    <p><a href="#">Forgot password?</a> &bull; <a href="#" onClick={toSignUp}> Signup here</a></p>
                 </form>
             </div>
         </div>

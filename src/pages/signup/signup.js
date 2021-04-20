@@ -40,11 +40,27 @@ function Signup() {
 
     function submitButton(event) {
         event.preventDefault();
+        let signObject = { username: userName,
+                             email: userEmail,
+                             password1: userPass,
+                             password2: confirmUserPass
+                         }
+        let jsonObject = JSON.stringify(signObject);
+
+        fetch('http://localhost//5000/api/v1/signup', {
+            method: 'POST',
+            body: signObject,
+            headers: { 'Content-Type': 'application/json'}
+        })
+        .then(res => res.json())
+        .then(res => {console.log(res);});
     };
+
+
     return(
         <div className="w3-container">
             <div className="w3-container">
-                <h2 className="w3-center">SignUp Form</h2>
+                <h2 className="w3-center">Create you account</h2>
             </div>
 
             <div className="w3-container">
@@ -70,7 +86,7 @@ function Signup() {
                     </div>
 
                     <Buttons text="Sign Up" onclick={submitButton}/>
-                    <p>Have an account? Login <a href="#" onClick={toLoginPage}>here</a></p>
+                    <p>Have an account? &bull; <a href="#" onClick={toLoginPage}>Login here</a></p>
                 </form>
             </div>
         </div>
