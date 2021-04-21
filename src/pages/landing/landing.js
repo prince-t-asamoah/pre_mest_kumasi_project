@@ -4,6 +4,7 @@ import Buttons from '../../components/Buttons/buttons';
 
 import "../../css/w3.css";
 import "../../css/style.css";
+import "../../css/w3-theme-blue.css";
 
 function Landing() {
     const appHistory = useHistory();

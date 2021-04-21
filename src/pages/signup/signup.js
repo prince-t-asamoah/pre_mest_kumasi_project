@@ -5,9 +5,7 @@ import Inputs from "../../components/Inputs/inputs";
 import Buttons from "../../components/Buttons/buttons";
 import "../../css/w3.css";
 
-
 function Signup() {
-
     const appHistory = useHistory();
     const [userName, setUserName] = useState("");
     const [userEmail, setEmail] = useState("");
