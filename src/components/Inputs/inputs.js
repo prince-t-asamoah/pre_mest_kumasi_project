@@ -7,7 +7,7 @@ function Inputs({type, placeholder, value, onchange}) {
                 placeHolder={placeholder}
                 value={value}
                 onChange={onchange}
-                className="w3-input w3-light-grey"
+                className="w3-input"
             />
         </>
     );

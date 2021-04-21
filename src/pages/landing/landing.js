@@ -19,17 +19,19 @@ function Landing() {
                 <header>Brand Name</header>
                  
                 <nav>     
-                    <Buttons text="Login" onclick={toLoginPage} />
+                    <Buttons text="Log in" onclick={toLoginPage} />
                     <Buttons text="Sign Up" onclick={toSignupPage} />
                 </nav>
             </div>
 
-            <div>
-                <h1>Modern Abstract Landing Page</h1>
+            <div className="landing-content">
+                <h1>Welcome to<br/> my landing page!</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit libero volutpat sed cras ornare arcu.
-                    Donec et odio pellentesque diam.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/>
+                    Blandit libero volutpat sed cras ornare arcu. Donec et odio pellentesque diam.
                 </p>
+                <Buttons text="Learn More"/>
             </div> 
         </div>
     );

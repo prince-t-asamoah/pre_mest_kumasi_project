@@ -17,9 +17,26 @@ html, body {
     display: flex;
     justify-content: space-between;
     padding:50px 100px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .landing-navbar header {
     font-size: 18px;
+}
+
+.landing-content {
+    padding: 100px;
+}
+
+.landing-content h1 {
+    font-size: 64px;
+    line-height: 65px;
+}
+
+.landing-content p {
+    line-height: 25px;
+}
+
+.landing-content button {
+    margin-right: 50px;
 }
