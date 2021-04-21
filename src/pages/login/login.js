@@ -4,9 +4,6 @@ import { useState } from 'react';
 import Inputs from "../../components/Inputs/inputs";
 import Buttons from "../../components/Buttons/buttons";
 
-import "../../css/w3.css";
-import "./login.css";
-
 function Login() {
     const appHistory = useHistory();
     const [userName, setUserName] = useState("");

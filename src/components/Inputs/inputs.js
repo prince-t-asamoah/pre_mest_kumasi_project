@@ -1,4 +1,3 @@
-import "../../css/w3.css";
 
 function Inputs({type, placeholder, value, onchange}) {
     return(

@@ -1,4 +1,3 @@
-import "../../css/w3.css";
 
 function Buttons({text, onclick}) {
     return(

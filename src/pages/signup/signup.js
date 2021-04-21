@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 import Inputs from "../../components/Inputs/inputs";
 import Buttons from "../../components/Buttons/buttons";
-import "../../css/w3.css";
 
 function Signup() {
     const appHistory = useHistory();
@@ -47,7 +46,7 @@ function Signup() {
 
         fetch('http://localhost//5000/api/v1/signup', {
             method: 'POST',
-            body: signObject,
+            body: jsonObject,
             headers: { 'Content-Type': 'application/json'}
         })
         .then(res => res.json())
