@@ -4,6 +4,7 @@ html, body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Landing Page Styles */
 .landing-container {
     height: 100vh;
     background-color: #4daaf6;
@@ -39,4 +40,50 @@ html, body {
 
 .landing-content button {
     margin-right: 50px;
+}
+
+/* Login Styles */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.login-left-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    color: #fff;
+    padding: 100px 100px 0px 100px; 
+    background-color: #4daaf6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23085a9d' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%230b78d1' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23085da2' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%230b7bd6' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%230960a7' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%230b7edb' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%230963ad' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%230b81e1' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%230966b2' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%230c84e6' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%230a69b7' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%230c87eb' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.login-left-container header {
+    /* margin: 50px 100px; */
+    font-size: 18px;
+}
+
+.login-left-container h1 {
+    font-size:64px;
+}
+
+.login-left-container p {
+    font-size: 18px;
+}
+
+.login-left-container div:nth-child(2) {
+    padding-top: 90px;
+}
+
+.login-left-container div:nth-child(3) {
+    margin-top: 200px;
+}
+
+
+.login-right-container {
+    display: flex;
+    flex-grow: 3;
+    padding: 100px;
 }

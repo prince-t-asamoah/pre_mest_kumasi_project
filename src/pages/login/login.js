@@ -40,26 +40,37 @@ function Login() {
    
 
     return(
-        <div className="w3-container login-container">
-            <div className="w3-container">
-                <h2 className="w3-center">Log in to Msys</h2>
+        <div className="login-container">
+            <div className="login-left-container">
+                <div>
+                    <header>Brand Name</header>
+                </div>
+
+                <div>
+                    <h1>Welcome Back!</h1>
+                    <p>Log in to continue access</p>
+                </div>
+
+                <div>
+                    <footer>Brand Name &copy; 2020</footer>
+                </div>
             </div>
 
-            <div className="w3-container">
-                <form> 
-                    <div className="w3-margin-bottom">
-                        <label>Username</label>
-                        <Inputs type="text" placeholder="Enter Your Username" onchange={updateUserName}/>
+            <div className="login-right-container">
+                <form>
+                    <header><h1>Log in</h1></header> 
+                    <div className="">
+                        <Inputs type="text" placeholder="Username or Email" onchange={updateUserName}/>
                     </div>
 
-                    <div className="w3-margin-bottom">
-                        <label>Password</label>
-                        <Inputs type="password" placeholder="Enter Your Password" onchange={updateUserPassword}/>
+                    <div className="">
+                        <Inputs type="password" placeholder="Password" onchange={updateUserPassword}/>
                     </div>
 
-                    <p></p>
+                    <p><span><Inputs type="checkbox"/></span>Remember me</p>
                     <Buttons text="Login" onclick={submitButton}/>
-                    <p><a href="#">Forgot password?</a> &bull; <a href="#" onClick={toSignUp}> Signup here</a></p>
+                    
+                    <p>Don't have an account? &bull; <a href="#" onClick={toSignUp}> Sign up</a></p>
                 </form>
             </div>
         </div>

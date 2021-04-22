@@ -7,7 +7,7 @@ function Inputs({type, placeholder, value, onchange}) {
                 placeHolder={placeholder}
                 value={value}
                 onChange={onchange}
-                className="w3-input"
+                className=""
             />
         </>
     );
