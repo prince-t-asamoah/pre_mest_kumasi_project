@@ -1,5 +1,5 @@
 
-function Inputs({type, placeholder, value, onchange}) {
+function Inputs({type, placeholder, value, onchange, classname}) {
     return(
         <>
             <input
@@ -7,7 +7,7 @@ function Inputs({type, placeholder, value, onchange}) {
                 placeHolder={placeholder}
                 value={value}
                 onChange={onchange}
-                className=""
+                className={classname}                    
             />
         </>
     );

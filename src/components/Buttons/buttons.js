@@ -4,7 +4,7 @@ function Buttons({text, onclick}) {
         <>
             <button 
                 onClick={onclick}
-                className="w3-button w3-border w3-round-xxlarge"> {text}
+                > {text}
             </button>
         </>
     );

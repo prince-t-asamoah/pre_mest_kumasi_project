@@ -58,16 +58,16 @@ function Login() {
 
             <div className="login-right-container">
                 <form>
-                    <header><h1>Log in</h1></header> 
-                    <div className="">
-                        <Inputs type="text" placeholder="Username or Email" onchange={updateUserName}/>
+                    <header><h1>Log in</h1></header>
+                    <div>
+                        <Inputs type="text" placeholder="Username or Email" classname="" onchange={updateUserName} />
                     </div>
-
-                    <div className="">
+                    
+                    <div>
                         <Inputs type="password" placeholder="Password" onchange={updateUserPassword}/>
                     </div>
 
-                    <p><span><Inputs type="checkbox"/></span>Remember me</p>
+                    <p><span><Inputs type="checkbox"/></span> Remember me</p>
                     <Buttons text="Login" onclick={submitButton}/>
                     
                     <p>Don't have an account? &bull; <a href="#" onClick={toSignUp}> Sign up</a></p>

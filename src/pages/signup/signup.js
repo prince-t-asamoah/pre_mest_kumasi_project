@@ -6,7 +6,7 @@ import Buttons from "../../components/Buttons/buttons";
 
 function Signup() {
     const appHistory = useHistory();
-    const [userName, setUserName] = useState("");
+    const [userFullName, setFullName] = useState("");
     const [userEmail, setEmail] = useState("");
     const [userPass, setUserPass] = useState("");
     const [confirmUserPass, setConfirmUserPass] = useState("");
@@ -15,9 +15,9 @@ function Signup() {
         appHistory.push("/login");
     };
 
-    function updateUserName(event) {
-        setUserName(event.target.value);
-        console.log(userName);
+    function updateFullName(event) {
+        setFullName(event.target.value);
+        console.log(userFullName);
     };
 
     function updateEmail(event) {
@@ -37,7 +37,7 @@ function Signup() {
 
     function submitButton(event) {
         event.preventDefault();
-        let signObject = { username: userName,
+        let signObject = { fullName: userFullName,
                              email: userEmail,
                              password1: userPass,
                              password2: confirmUserPass
@@ -55,36 +55,45 @@ function Signup() {
 
 
     return(
-        <div className="w3-container">
-            <div className="w3-container">
-                <h2 className="w3-center">Create you account</h2>
+        <div className="signup-container">
+            <div className="signup-left-container">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login with your personal info.</p>
+                <Buttons text="Log in" onclick={toLoginPage}/>
             </div>
 
-            <div className="w3-container">
-                <form>
-                    <div className="w3-margin-bottom">
-                        <label>Username</label>
-                        <Inputs type="text" placeholder="Enter Your Username" onchange={updateUserName}/>
-                    </div>
+            <div className="signup-right-container">
 
-                    <div className="w3-margin-bottom">
-                        <label>Email</label>
-                        <Inputs type="text" placeholder="Enter Your Last Email" onchange={updateEmail}/>
-                    </div>
+                <div className="">
+                    <h2 className="">Create an account</h2>
+                </div>
 
-                    <div className="w3-margin-bottom">
-                        <label>Password</label>
-                        <Inputs type="password" placeholder="Enter Your Password" onchange={updateUserPass}/>
-                    </div>
+                <div className="">
+                    <form>
+                        <div className="">
+                            <label>Name</label>
+                            <Inputs type="text" placeholder="Enter Your Full Name" onchange={updateFullName}/>
+                        </div>
 
-                    <div className="w3-margin-bottom">
-                        <label>Confirm Password</label>
-                        <Inputs type="password" placeholder="Repeat Your Password" onchange={updateConfirmPass}/>
-                    </div>
+                        <div className="">
+                            <label>Email</label>
+                            <Inputs type="text" placeholder="Enter Your Email" onchange={updateEmail}/>
+                        </div>
 
-                    <Buttons text="Sign Up" onclick={submitButton}/>
-                    <p>Have an account? &bull; <a href="#" onClick={toLoginPage}>Login here</a></p>
-                </form>
+                        <div className="">
+                            <label>Password</label>
+                            <Inputs type="password" placeholder="Enter Your Password" onchange={updateUserPass}/>
+                        </div>
+
+                        <div className="">
+                            <label>Confirm Password</label>
+                            <Inputs type="password" placeholder="Repeat Your Password" onchange={updateConfirmPass}/>
+                        </div>
+
+                        <Buttons text="Sign Up" onclick={submitButton}/>
+                        <p>Have an account? &bull; <a href="#" onClick={toLoginPage}>Login here</a></p>
+                    </form>
+                </div>
             </div>
         </div>
     );

@@ -1,9 +1,26 @@
 html, body {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+input[type=text], input[type=password]{
+  /* width: 100%; */
+  padding: 12px 20px;
+  border: none;
+}
+
+input[type=checkbox] {
+    /* width:0px; */
+}
+input:focus {
+    outline: 2px solid #3a5061;
+}
+
+button {
+    width: 50%;
+}
 /* Landing Page Styles */
 .landing-container {
     height: 100vh;
@@ -86,4 +103,23 @@ html, body {
     display: flex;
     flex-grow: 3;
     padding: 100px;
+}
+
+.signup-container {
+    display: flex;
+    height: 100vh;
+    
+}
+
+.signup-left-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #4daaf6;
+    flex-grow: 1;
+}
+
+.signup-right-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
