@@ -8,8 +8,8 @@ const appPort = 5000;
 
 appServer.use(cors());
 appServer.use(express.json());
+appDBConnect();
 appServer.use('/api/v1', appRouter);
 
-appDBConnect();
 
 appServer.listen(appPort, ()=> console.log(`Application Server started on port ${appPort}`));
