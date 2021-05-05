@@ -1,24 +1,20 @@
-import { Switch, Route } from 'react-router-dom';
+import AppRouter from './routers/appRouter';
 
 // Stylesheets
 import "./css/w3.css";
 import "./css/w3-theme-blue.css";
 import './css/style.css';
-
-//Pages
-import Landing from './pages/Landing/landing';
-import Login from './pages/Login/login';
-import Signup from './pages/Signup/signup';
+// import './css/bootstrap/bootstrap.min.css';
+// import './css/bootstrap/dashboard.css';
+// import Dashboard from './pages/Dashboard/dashboard';
+// import Landing from './pages/Landing/landing';
 
 function App() {
   return (
-    <div>
-      <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/signup" component={Signup} />
-      </Switch>
-    </div>
+    <>
+      <AppRouter/>
+      {/* <Dashboard/> */}
+    </>
   );
 };
 

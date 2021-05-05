@@ -1,15 +1,17 @@
 
-function Inputs({type, placeholder, value, onchange, classname}) {
+function Inputs({type, placeholder, value, onchange, classname, style, name}) {
     return(
-        <>
+        <div style={style}>
             <input
                 type={type}
                 placeHolder={placeholder}
                 value={value}
                 onChange={onchange}
-                className={classname}                    
+                className={classname}
+                name={name}
+                required                  
             />
-        </>
+        </div>
     );
 };
 
