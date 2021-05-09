@@ -2,7 +2,7 @@
 function Footer() {
     return (
         <footer>
-            <p>&copy; Stareer. All rights reserved.</p>
+            <p>&copy; artfiva. All rights reserved.</p>
         </footer>
     );
 }

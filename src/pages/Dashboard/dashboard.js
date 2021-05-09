@@ -1,6 +1,8 @@
-import Inputs from '../../components/Inputs/inputs';
+// import Inputs from '../../components/Inputs/inputs';
 import Header from '../../components/Header/header';
 import Sidebar from '../../components/Side-bar/sidebar';
+import '../../css/bootstrap/dashboard.css';
+import '../../css/bootstrap/bootstrap.min.css';
 
 function Dashboard() {
     return(

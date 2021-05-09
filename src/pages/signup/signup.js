@@ -61,7 +61,7 @@ function Signup() {
                 <p>To keep connected with us please login with your personal info.</p>
                 <Buttons text="Log in" onclick={toLoginPage}/>
             </div> */}
-            <LeftBox brand="Stareer" msghead="Neep help?" msgbody="Sign up and manage your career now."/>
+            <LeftBox brand="artfiva" msghead="Neep help?" msgbody="Sign up and manage your career now."/>
             {/* <div className="signup-right-container">
                 <div className="">
                     <h2 className="">Create an account</h2>

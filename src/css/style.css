@@ -32,7 +32,7 @@ html,body {
 .landing-container {
     height: 100vh;
     background-color: var(--main-theme-color);
-    background-image: url("../img/login-bg.svg");
+    background-image: url("../img/african-musician.jpg");
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
@@ -47,10 +47,12 @@ html,body {
 
 .landing-navbar header {
     font-size: 18px;
+    font-weight: bolder;
 }
 
 .landing-content {
     padding: 100px;
+    text-align: center;
 }
 
 .landing-content h1 {
@@ -59,7 +61,8 @@ html,body {
 }
 
 .landing-content p {
-    line-height: 25px;
+    line-height: 32px;
+    font-weight: bolder;
 }
 
 .landing-content button {
@@ -79,7 +82,8 @@ html,body {
     color: #fff;
     padding: 100px 100px 0px 100px; 
     background-color: var(--main-theme-color);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23085a9d' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%230b78d1' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23085da2' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%230b7bd6' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%230960a7' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%230b7edb' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%230963ad' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%230b81e1' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%230966b2' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%230c84e6' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%230a69b7' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%230c87eb' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-image: url("../img/african-drummer.jpg");
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23085a9d' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%230b78d1' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23085da2' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%230b7bd6' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%230960a7' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%230b7edb' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%230963ad' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%230b81e1' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%230966b2' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%230c84e6' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%230a69b7' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%230c87eb' points='943 900 1210 900 971 687'/%3E%3C/svg%3E"); */
     background-attachment: fixed;
     background-size: cover;
 }
@@ -87,6 +91,7 @@ html,body {
 .left-box header {
     /* margin: 50px 100px; */
     font-size: 18px;
+    font-weight: bolder;
 }
 
 .left-box h1 {

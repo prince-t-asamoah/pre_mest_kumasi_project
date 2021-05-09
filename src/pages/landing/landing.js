@@ -4,6 +4,7 @@ import {useAppContext} from '../../context/appContext';
 // import './cover.css';
 import Buttons from '../../components/Buttons/buttons';
 import Footer from '../../components/Footer/footer';
+// import Logo from '../../img/logo.png';
 
 function Landing() {
     const {toPage} = useAppContext();
@@ -36,7 +37,7 @@ function Landing() {
 
         <div className="landing-container">
             <div className="landing-navbar">
-                <header>Stareer</header>
+                <header>artfiva</header>
                  
                     <nav>
                         <Buttons text="Log in" classname="w3-button w3-border" onclick={()=>toPage("/login")}/>
@@ -48,10 +49,9 @@ function Landing() {
                 <h1>Starting your music career?<br/></h1>
                 <p>
                     <br/>
-                    Create a profile, task, and automate <br/>all your budgeting and accounting work at the spot. <br/>
-                    Music management at your convenience.
+                    With a few clicks away, manage your music career at you convenience.<br/>
                 </p>
-                <Buttons text="Start Now!" classname="w3-button w3-border w3-wide"/>
+                <Buttons text="Get Started!" classname="w3-button w3-border w3-wide"/>
             </div> 
 
             <div className="footer">
