@@ -1,14 +1,15 @@
 
-function Inputs({ style, type, placeholder, name, value, onchange, classname}) {
+function Inputs({ style, type, placeholder, name, value, onchange, classname, arialabel}) {
     return(
         <div style={style}>
             <input
                 type={type}
-                placeHolder={placeholder}
+                placeholder={placeholder}
                 name={name}
                 value={value}
                 className={classname}
                 onChange={onchange}
+                aria-label={arialabel}
                 required                  
             />
         </div>
