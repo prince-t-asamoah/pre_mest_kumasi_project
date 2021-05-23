@@ -1,62 +1,25 @@
 import {useAppContext} from '../../context/appContext';
-// import {NavLink} from 'react-router-dom';
 
-// import './cover.css';
 import Buttons from '../../components/Buttons/buttons';
-import Footer from '../../components/Footer/footer';
+import NavBar from '../../components/Header/navbar';
+// import Footer from '../../components/Footer/footer';
 // import Logo from '../../img/logo.png';
 
 function Landing() {
     const {toPage} = useAppContext();
     
     return(
-        // <div className="d-flex text-center text-white landing-container">
-        //     <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        //         <header className="mb-auto">
-        //             <div>
-        //                 <h3 className="float-md-start mb-0">Brand</h3>
-        //                 <nav className="nav nav-masthead justify-content-center float-md-end btn-group">
-        //                     {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
-        //                     <Buttons text="Signup" className="nav-link btn btn-outline-primary active" onclick={() => toPage("/signup")}/>
-        //                     <Buttons text="Login"className="nav-link" onclick={() => toPage("/login")}/>
-        //                 </nav>
-        //             </div>
-        //         </header>
+        <div className="bg-1">
+            <header>
+                <NavBar/>
 
-        //         <main className="px-3">
-        //             <h1>Welcome</h1>
-        //             <p className="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        //             <p className="lead">
-        //                 <a href="#" className="btn btn-lg btn-outline-success fw-bold border-white text-white">Learn more</a>
-        //             </p>
-        //         </main>
+                <div className="w3-container w3-center w3-text-white w3-animate-top hero-section">
+                    <h1 className="w3-jumbo">Welcome to the artfiva community.</h1>
+                    <h2 className="w3-xlarge">Maecenas porttitor congue massa. Fusce posuere, <br/>magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</h2>
+                    <Buttons text="Get Started!" classname="w3-button w3-xlarge w3-margin-top w3-padding w3-flat-wisteria w3-round-large" onclick={()=>toPage("/signup")}/>
+                </div>
+            </header>   
 
-        //        <Footer/>
-        //     </div>
-        // </div>
-
-        <div className="landing-container">
-            <div className="landing-navbar">
-                <header>artfiva</header>
-                 
-                    <nav>
-                        <Buttons text="Log in" classname="w3-button w3-border" onclick={()=>toPage("/login")}/>
-                        <Buttons text="Sign Up" classname="w3-button w3-border" onclick={() => toPage("/signup")}/>
-                    </nav>     
-            </div>
-
-            <div className="landing-content">
-                <h1>Starting your music career?<br/></h1>
-                <p>
-                    <br/>
-                    With a few clicks away, manage your music career at you convenience.<br/>
-                </p>
-                <Buttons text="Get Started!" classname="w3-button w3-border w3-wide"/>
-            </div> 
-
-            <div className="footer">
-                <Footer/>
-            </div>
         </div>
     );
 };
