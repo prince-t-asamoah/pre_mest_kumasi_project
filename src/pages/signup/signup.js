@@ -15,16 +15,26 @@ function Signup() {
     
     function submit(e) {
         e.preventDefault();
-        // const signObj = {values};
-        // const jsonObj = JSON.stringify(signObj);
 
-        // fetch('http://localhost:5000/api/v1/signup', {
-        //     method: 'POST',
-        //     body: jsonObj,
-        //     headers: { 'Content-Type': 'application/json'}
-        // })
-        // .then(res => res.json())
-        // .then(res => {console.log(res);});
+    //     if (values.password1 === values.password2) {
+    //         fetch("https://localhost:5000/api/v1/signup", {
+    //             method: "POST",
+    //             body: JSON.stringify(values),
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //             },
+    //         })
+
+    //     const signObj = {values};
+    //     const jsonObj = JSON.stringify(signObj);
+
+    //     fetch('http://localhost:5000/api/v1/signup', {
+    //         method: 'POST',
+    //         body: jsonObj,
+    //         headers: { 'Content-Type': 'application/json'}
+    //     })
+    //     .then(res => res.json())
+    //     .then(res => {console.log(res);});
     };
 
     return(

@@ -16,16 +16,31 @@ function Login() {
 
     function submit(e) {
         e.preventDefault();
-    //     const logObj = { values };
-    //     const jsonObj = JSON.stringify(logObj);
+        const logObj = { values };
+        const jsonObj = JSON.stringify(logObj);
 
-    //     fetch('http://localhost:5000/api/v1/signup', {
-    //         method: 'POST',
-    //         body: jsonObj,
-    //         headers: { 'Content-Type': 'application/json' }
-    //     })
-    //         .then(res => res.json())
-    //         .then(res => { console.log(res); });
+        fetch('http://localhost:5000/api/v1/login', {
+            method: 'POST',
+            body: jsonObj,
+            headers: { 'Content-Type': 'application/json' }
+        })
+            .then(res => res.json())
+            .then(res => {
+                if (res.success) {
+                    // setshowLoader(false);
+                    // history.push("/dashboarddefault");
+                    alert("Signup Successful");
+                } else if (res.failure) {
+                    // display
+                    alert("Wrong Username or Password");
+                    // setshowLoader(false);
+                } else if (res.goaway) {
+                    alert("User Doesn't Exist");
+                    // setshowLoader(false);
+                }
+            },
+                (err) => console.log(err)
+             );
     };
     
     return(
