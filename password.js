@@ -15,9 +15,9 @@ function genPass(password) {
 
 //Verifies user password with database salt and hash
 function validPass(password, salt, hash) {
-    const hashverify = crypto.pbkdf2Sync(password, salt, hash).toString("hex");
+    const hashVerify = crypto.pbkdf2Sync(password, salt, 10000, 64, "sha512").toString("hex");
 
-    return hash === hashverify;
+    return hash === hashVerify;
 }
 
 module.exports = { genPass, validPass};
