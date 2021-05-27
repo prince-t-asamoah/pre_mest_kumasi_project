@@ -4,12 +4,13 @@ const appSchema = mongoose.Schema;
 
 const appSchemaModel = new appSchema(
     {
-        fullName: String,
+        fullname: String,
         email: String,
-        password1: String,
-        password2: String
+        password: String,
+        hash: String,
+        salt: String
     }
 );
-const appModel = mongoose.model('mmUsers', appSchemaModel);
+const appModel = mongoose.model('users', appSchemaModel);
 
 module.exports = appModel;
