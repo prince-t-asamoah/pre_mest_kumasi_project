@@ -8,7 +8,7 @@ const appDBConnect = async () => {
         );
         console.log("Database connected successfully");
     } catch (error) {
-        console.log(error);
+        console.log(error, "Database connection unsuccesful, check the internet connection");
     }
 }
 
